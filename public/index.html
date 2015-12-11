@@ -2,13 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>Big Two</title>
+    <link rel="stylesheet" href="/styles.css" />
 </head>
 <body>
-    <h1>Hello World!</h1>
+    <ul class="pages">
+        <li class="login page">
+            <h3>Please enter your username:</h3>
+            <input id="usernameInput" type="text" maxlength="14" />
+        </li>
+        <li class="game page">
+            <div class="game-column">
+                <div id="card-area"></div>
+            </div>
+            <div class="chat-column">
+                <ul class="messages"></ul>
+                <input id="chatInput" class="chat-box" placeholder="Type message..." />
+            </div>
+        </li>
+    </ul>
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
     <script src="/socket.io/socket.io.js"></script>
-    <script>
-        var socket = io();
-    </script>
+    <script src="/main.js"></script>
 </body>
 </html>
