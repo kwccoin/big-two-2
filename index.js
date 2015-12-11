@@ -41,6 +41,8 @@ io.on('connection', function(socket) {
 
         // send the hand to the player
         socket.emit('deal hand', hand);
+
+        // test change
     });
 
     socket.on('chat message', function(message) {
